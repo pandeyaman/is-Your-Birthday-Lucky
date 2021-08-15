@@ -1,0 +1,20 @@
+*{
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+html{
+    font-size: 16px;
+}
+
+
+.span-remark{
+    display: block;
+    margin: 1rem;
+}
+
+img{
+    width: 40%;
+    border: 5px solid black;
+}
+
