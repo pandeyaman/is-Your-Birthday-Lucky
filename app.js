@@ -7,7 +7,7 @@ const divComment = document.querySelector(".div-comments");
 
 const checkBirthdateLucky = () =>{
     if(birthDate.value == "" || luckyNumber.value == ""){
-        alert("emot");
+        alert("Birthdate or Lucky Number missing !");
     }
     else{
         let date = birthDate.value.toString().replaceAll("-","");
@@ -34,15 +34,15 @@ const checkLucky=(total,num)=>{
 }
 
 const printRemark = (lucky) =>{
+    imgReaction.style.display = "block";
+    divComment.style.display = "block";
     if(lucky){
-        divComment.style.display = "block";
-        remarks.textContent = "LUCKY HAI BOSS";
+        remarks.textContent = "WOAH ! You birthday is a lucky number, so...";
         imgReaction.src="/img/lucky.png";
         
     }
     else{
-        remarks.textContent = "NOT LUCKY DUDE";
-        divComment.style.display = "block";
+        remarks.textContent = "OHO ! Your's is not a lucky one !";
         imgReaction.src="/img/notlucky.png";
 
     }

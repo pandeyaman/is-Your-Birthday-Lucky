@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Lucky Birthday</title>
-</head>
-<body>
-    <h1>Is Your Birthday Lucky?</h1>
-    <h3>Enter your birth date and your lucky number</h3>
-    <h3>Enter your birth date :</h3>
-    <input type="date" class="input-date">
-    <h3>Enter your lucky number :</h3>
-    <input type="number" min="1" class="input-lucky-number">
-    <button class="btn-check">CHECK</button>
-    <div class="div-comments" hidden>
-        <span class="span-remark">Comment</span>
-        <img src="" alt="" class="img-reaction">
-    </div>
-    <script src="/app.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d507b68f4f.js" crossorigin="anonymous"></script>
+        <title>Lucky Birthday</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Is Your Birthday Lucky?</h1>
+            <h3>Enter your birth date :</h3>
+            <input type="date" class="input-date" required>
+            <h3>Enter your lucky number :</h3>
+            <input type="number" min="1" class="input-lucky-number" required><br>
+            <button class="btn-check">CHECK</button>
+            <div class="div-comments">
+                <span class="span-remark">NOTE: We are not storing your data for any use!</span><br>
+                <img src="" alt="" class="img-reaction" hidden>
+            </div>
+        </div>
+        <footer>
+            <p class="footer-para">Made by
+                <span ><a target="_blank" class="span-portfolio-link" href="https://pandeyaman.netlify.app/">Aman Pandey</a></span>
+                <span class="span-footer-separator">|</span>
+                <span class="icons">
+                    <a target="_blank" href="https://twitter.com/pandeyaman111"><i class="fab fa-twitter-square"></i></a>
+                    <a target="_blank" href="https://github.com/pandeyaman"><i class="fab fa-github-square"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/pandeyaman111/"><i class="fab fa-linkedin"></i></a>
+                </span>
+            </p>
+        </footer>
+        <script src="/app.js"></script>
+    </body>
 </html>
